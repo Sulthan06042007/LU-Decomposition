@@ -49,6 +49,17 @@ Program to find the LU Decomposition of a matrix.
 Developed by: MOHAMED SULTHAN A
 RegisterNumber: 23004839
 */
+```
+# To print X matrix (solution to the equations)
+from scipy.linalg import lu_factor,lu_solve
+import numpy as np
+arr=eval(input())
+constant=eval(input())
+A=np.array(arr)
+B=np.array(constant)
+result=lu_factor(A)
+solution=lu_solve(result,B)
+print(solution)
 
 ```
 
